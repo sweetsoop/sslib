@@ -10,6 +10,6 @@ import 'sslib_platform_interface.dart';
 class SSlib {
   Future<String?> getPlatformVersion() async {
     //return SSlibPlatform.instance.getPlatformVersion();
-    return 'SWEET-SOOP';
+    return 'SWEET-SOOP for FLUTTER';
   }
 }
