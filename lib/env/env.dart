@@ -1,6 +1,6 @@
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-class SSEnv {
+class Env {
   static Future<void> load({String fileName = '.env'}) async => await dotenv.load(fileName: fileName);
 
   static String get(String key, {String? fallback}) => dotenv.get(key, fallback: fallback);
