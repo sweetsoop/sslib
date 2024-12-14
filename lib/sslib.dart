@@ -7,13 +7,9 @@
 
 //import 'sslib_platform_interface.dart';
 
-import 'package:sslib/env/env.dart';
-
 class SSlib {
   Future<String?> getPlatformVersion() async {
     //return SSlibPlatform.instance.getPlatformVersion();
     return 'SWEET-SOOP for FLUTTER';
   }
-
-  static Env get env => Env();
 }
