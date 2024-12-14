@@ -15,6 +15,5 @@ class SSlib {
     return 'SWEET-SOOP for FLUTTER';
   }
 
-  static final _env = Env();
-  Env get env => _env;
+  static Env get env => Env();
 }
