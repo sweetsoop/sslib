@@ -5,11 +5,10 @@
 // platforms in the `pubspec.yaml` at
 // https://flutter.dev/to/pubspec-plugin-platforms.
 
-//import 'sslib_platform_interface.dart';
+import 'sslib_platform_interface.dart';
 
 class SSlib {
   Future<String?> getPlatformVersion() async {
-    //return SSlibPlatform.instance.getPlatformVersion();
-    return 'SWEET-SOOP for FLUTTER';
+    return SSlibPlatform.instance.getPlatformVersion();
   }
 }
