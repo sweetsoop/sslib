@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:sslib/datetime/datetime_formatter.dart';
+import 'package:sslib/datetime/datetime_util.dart';
 import 'package:sslib/sslib.dart';
 import 'package:sslib/sslib_platform_interface.dart';
 import 'package:sslib/sslib_method_channel.dart';
@@ -12,7 +12,7 @@ class MockSslibPlatform with MockPlatformInterfaceMixin implements SSlibPlatform
 
 void main() {
   test('초를 분과 초로 만들기', () {
-    expect(SSDateTimeFormat.formatMinSec(180), '03분');
+    expect(DateTimeUtil.getMinSecFromSeconds(180), (3, 0));
   });
   /*
   final SSlibPlatform initialPlatform = SSlibPlatform.instance;
