@@ -3,7 +3,7 @@ import 'package:intl/intl.dart';
 
 mixin LogService {
   String _name = '';
-  static const _nameSize = 16;
+  static const _nameSize = 20;
 
   void setName(String name) => _name = name.padRight(_nameSize);
 
